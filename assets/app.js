@@ -165,6 +165,13 @@ window.APP = (function () {
       }).join("") + "</div>" +
       "<p>" + esc(t(C.premise.note)) + "</p>";
 
+    /* cohort photograph */
+    if (C.cohort) {
+      $("#cohort").innerHTML =
+        '<img src="' + esc(C.cohort.src) + '" alt="' + esc(t(C.cohort.alt)) + '" width="1800" height="1012" loading="lazy" decoding="async">' +
+        "<figcaption><b>" + esc(t(C.cohort.caption)) + "</b><span>" + esc(t(C.cohort.note)) + "</span></figcaption>";
+    }
+
     /* the three responsibilities */
     $("#balance").innerHTML = C.balance.map(function (b) {
       return '<article class="card"><span class="n">' + esc(b.n) + "</span><h3>" + esc(t(b.title)) +

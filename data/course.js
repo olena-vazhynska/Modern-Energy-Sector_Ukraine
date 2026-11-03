@@ -82,6 +82,24 @@ window.COURSE = {
     }
   },
 
+  // The cohort photograph. Taken on the Sogin study visit; it stands in for the
+  // group picture because it is the one frame with the whole cohort in it.
+  cohort: {
+    src: "assets/cohort.jpg",
+    alt: {
+      en: "The course cohort photographed together outdoors at the Sogin site in Trino, standing in front of a decommissioned steam-turbine rotor, with the European, Italian and Sogin flags behind them.",
+      uk: "Група учасників курсу на спільному фото надворі на майданчику Sogin у Тріно, перед виведеним з експлуатації ротором парової турбіни; позаду — прапори ЄС, Італії та Sogin."
+    },
+    caption: {
+      en: "The cohort on the second study visit — Sogin S.p.A., Trino, Thursday 29 October 2026.",
+      uk: "Група під час другого навчального візиту — Sogin S.p.A., Тріно, четвер 29 жовтня 2026 року."
+    },
+    note: {
+      en: "Twenty-two participants from Ukraine's ministries, inspection authorities, energy enterprises and mine-rescue services, with the ILO and ITCILO team.",
+      uk: "Двадцять два учасники з міністерств, наглядових органів, енергетичних підприємств і гірничорятувальних служб України разом із командою МОП та МНЦ МОП."
+    }
+  },
+
   // The three responsibilities participants balance daily — opening, slide 4.
   balance: [
     { n: "01", title: { en: "Protect people", uk: "Захистити людей" },
