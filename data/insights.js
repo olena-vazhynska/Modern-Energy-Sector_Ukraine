@@ -29,8 +29,8 @@
 window.INSIGHTS = {
 
   lead: {
-    en: "Twenty-six needs, drawn from the wall of cards, the pre-course survey and the self-introductions. Open one to see which sessions of this programme answer it — and what to read next.",
-    uk: "Двадцять шість потреб, зібраних зі стіни карток, анкети перед курсом і самопредставлень. Відкрийте будь-яку, щоб побачити, які сесії програми на неї відповідають — і що читати далі."
+    en: "Thirty needs, drawn from the wall of cards, the pre-course survey and the self-introductions, grouped into the four question clusters that steer the week. Open one to see which sessions of this programme answer it — and what to read next.",
+    uk: "Тридцять потреб, зібраних зі стіни карток, анкети перед курсом і самопредставлень та згрупованих у чотири питальні кластери, що скеровують тиждень. Відкрийте будь-яку, щоб побачити, які сесії програми на неї відповідають — і що читати далі."
   },
 
   method: {

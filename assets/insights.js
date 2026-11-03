@@ -135,7 +135,9 @@ window.INS = (function () {
           var n = needTitle[id];
           return n ? '<button type="button" data-need-jump="' + A.esc(id) + '">↳ ' + A.esc(A.t(n.title)) + "</button>" : "";
         }).join("") + "</div>" +
-        '<div class="readlist" style="margin-top:12px">' + (d.reading || []).map(readingCard).join("") + "</div>" +
+        '<details class="fread"><summary>' + A.esc(A.t(window.UI.furtherReading)) +
+          " (" + (d.reading || []).length + ")</summary>" +
+          '<div class="readlist">' + (d.reading || []).map(readingCard).join("") + "</div></details>" +
         "</article>";
     }).join("");
   }
