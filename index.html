@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Modern OSH Governance and Inspection in the Energy Sector — course dashboard</title>
+<meta name="description" content="Bilingual course dashboard (EN/UK) for ITCILO activity A4019972 — Modern OSH Governance and Inspection in the Energy Sector, Turin, 26–30 October 2026.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css?v=20261103">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span class="brand" data-ui="brand"></span>
+    <span class="spacer"></span>
+    <div class="langset" role="group" aria-label="Language">
+      <button type="button" data-lang="en" aria-pressed="true">English</button>
+      <button type="button" data-lang="uk" aria-pressed="false">Українська</button>
+    </div>
+    <button type="button" class="themebtn" id="theme-toggle" aria-label="Toggle colour theme">◐</button>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="pills" id="hero-pills"></div>
+    <h1 id="hero-title"></h1>
+    <p class="hero-sub" id="hero-lead"></p>
+    <div class="hero-meta" id="hero-meta"></div>
+    <div class="kpis" id="hero-kpis"></div>
+    <p class="hero-project" id="hero-project"></p>
+  </div>
+</header>
+
+<nav class="tabs" role="tablist" aria-label="Dashboard sections">
+  <div class="wrap tabs-inner">
+    <button role="tab" data-tab="overview" aria-selected="true"><i>01</i><span data-ui="tabOverview"></span></button>
+    <button role="tab" data-tab="participants" aria-selected="false"><i>02</i><span data-ui="tabParticipants"></span></button>
+    <button role="tab" data-tab="insights" aria-selected="false"><i>03</i><span data-ui="tabInsights"></span></button>
+  </div>
+</nav>
+
+<main class="wrap">
+
+  <!-- ===================================================== 01 · OVERVIEW -->
+  <section id="panel-overview" data-panel="overview" class="panel" role="tabpanel">
+
+    <div class="premise" id="premise"></div>
+
+    <div class="grid-3 balance" id="balance"></div>
+    <p class="lede" id="balance-note" style="margin:-4px 0 26px"></p>
+
+    <div class="section-head">
+      <p class="eyebrow" data-ui="eyeCourse"></p>
+      <h2 data-ui="h_about"></h2>
+    </div>
+    <div class="grid-2">
+      <article class="card"><p id="snapshot"></p></article>
+      <article class="card facts" id="facts"></article>
+    </div>
+
+    <div class="section-head">
+      <h2 data-ui="h_features"></h2>
+      <p class="lede" data-ui="l_features"></p>
+    </div>
+    <div class="grid-3" id="pillars"></div>
+
+    <div class="grid-2">
+      <article class="card">
+        <h2 data-ui="h_learn"></h2>
+        <ul class="ticks" id="topics"></ul>
+      </article>
+      <article class="card">
+        <h2 data-ui="h_do"></h2>
+        <ol class="numbered" id="outcomes"></ol>
+      </article>
+    </div>
+
+    <hr class="rule">
+
+    <div class="section-head">
+      <p class="eyebrow" data-ui="eyeJourney"></p>
+      <h2 data-ui="h_journey"></h2>
+      <p class="lede" id="journey-lead"></p>
+    </div>
+    <div class="journey" id="journey"></div>
+
+    <div class="grid-2">
+      <article class="card">
+        <h2 id="cocreation-title"></h2>
+        <p class="muted" id="cocreation-blurb" style="font-size:13.5px"></p>
+        <ol class="ladder" id="cocreation"></ol>
+        <blockquote class="pullquote" id="cocreation-quote"></blockquote>
+      </article>
+      <div>
+        <article class="card" style="margin-bottom:16px">
+          <h2 id="lens-title"></h2>
+          <p class="muted" id="lens-blurb" style="font-size:13.5px"></p>
+          <div class="lens-grid" id="lens"></div>
+        </article>
+        <article class="card">
+          <h2 data-ui="h_format"></h2>
+          <p class="muted" id="format" style="font-size:13.5px"></p>
+        </article>
+      </div>
+    </div>
+
+    <div class="section-head">
+      <h2 data-ui="h_visits"></h2>
+      <p class="lede" data-ui="l_visits"></p>
+    </div>
+    <div class="grid-3" id="visits"></div>
+
+    <hr class="rule">
+
+    <div class="section-head">
+      <p class="eyebrow" data-ui="eyeAgenda"></p>
+      <h2 data-ui="h_agenda"></h2>
+      <p class="lede" data-ui="l_agenda"></p>
+    </div>
+    <div class="toolbar">
+      <label class="vh" for="day-filter">Filter by day</label>
+      <select id="day-filter"></select>
+      <span class="muted" id="session-count" aria-live="polite" style="font-size:13px"></span>
+    </div>
+    <div id="days"></div>
+
+    <div class="grid-2" style="margin-top:22px">
+      <article class="card">
+        <h2 data-ui="h_who"></h2>
+        <p class="muted" id="audience" style="font-size:13.5px"></p>
+      </article>
+      <article class="card">
+        <h2 data-ui="h_why"></h2>
+        <ul class="ticks" id="why"></ul>
+      </article>
+    </div>
+
+    <div class="section-head">
+      <h2 data-ui="h_people"></h2>
+      <p class="lede" data-ui="l_people"></p>
+    </div>
+    <div class="people" id="people"></div>
+
+    <p class="srcnote" data-ui="src_overview"></p>
+  </section>
+
+  <!-- ================================================= 02 · PARTICIPANTS -->
+  <section id="panel-participants" data-panel="participants" class="panel" role="tabpanel" hidden>
+    <div class="section-head">
+      <p class="eyebrow" data-ui="eyeCohort"></p>
+      <h2 data-ui="h_participants"></h2>
+      <p class="lede" data-ui="l_participants"></p>
+    </div>
+
+    <div class="toolbar" id="p-toolbar"></div>
+    <div class="grid-4" id="p-stats"></div>
+    <p class="muted" id="p-count" style="font-size:13px;margin:-4px 0 12px"></p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr id="p-head"></tr></thead>
+        <tbody id="p-rows"></tbody>
+      </table>
+    </div>
+
+    <div class="section-head">
+      <h2 data-ui="h_demographics"></h2>
+      <p class="lede" data-ui="l_demographics"></p>
+    </div>
+    <div class="charts" id="p-charts"></div>
+
+    <hr class="rule">
+
+    <div class="section-head">
+      <p class="eyebrow" data-ui="eyeSurvey"></p>
+      <h2 data-ui="h_survey"></h2>
+      <p class="lede" id="survey-lead"></p>
+    </div>
+    <div class="grid-4" id="survey-headline"></div>
+    <div class="charts" id="survey-charts"></div>
+    <div class="grid-3" id="survey-binary"></div>
+    <div class="grid-2" id="survey-extra"></div>
+
+    <hr class="rule">
+
+    <div class="section-head">
+      <p class="eyebrow" data-ui="eyeIntros"></p>
+      <h2 data-ui="h_intros"></h2>
+      <p class="lede" data-ui="l_intros"></p>
+    </div>
+    <div class="intro-grid" id="intros"></div>
+
+    <p class="srcnote" data-ui="src_participants"></p>
+  </section>
+
+  <!-- ===================================================== 03 · INSIGHTS -->
+  <section id="panel-insights" data-panel="insights" class="panel" role="tabpanel" hidden>
+    <div class="section-head">
+      <p class="eyebrow" data-ui="eyeInsights"></p>
+      <h2 data-ui="h_insights"></h2>
+      <p class="lede" id="insights-lead"></p>
+    </div>
+
+    <div class="note" id="method"></div>
+
+    <div class="toolbar">
+      <input type="search" id="i-search" data-ui-ph="ph_insights">
+      <button class="btn" id="i-expand" type="button" data-ui="btn_expand"></button>
+      <button class="btn" id="i-collapse" type="button" data-ui="btn_collapse"></button>
+    </div>
+    <div class="cluster-nav" id="cluster-nav"></div>
+    <p class="muted" id="i-count" style="font-size:13px;margin:-6px 0 16px"></p>
+
+    <div id="clusters"></div>
+
+    <hr class="rule">
+
+    <div class="section-head">
+      <p class="eyebrow" data-ui="eyeForesight"></p>
+      <h2 id="foresight-title"></h2>
+      <p class="lede" id="foresight-lead"></p>
+    </div>
+    <div class="fore" id="foresight"></div>
+
+    <hr class="rule">
+
+    <div class="section-head">
+      <p class="eyebrow" data-ui="eyeLibrary"></p>
+      <h2 data-ui="h_library"></h2>
+      <p class="lede" data-ui="l_library"></p>
+    </div>
+    <div class="lib-head">
+      <input type="search" id="r-search" data-ui-ph="ph_library">
+      <select id="r-cat"></select>
+      <select id="r-origin"></select>
+      <span class="muted" id="r-count" style="font-size:13px"></span>
+    </div>
+    <div class="libgrid" id="library"></div>
+
+    <p class="srcnote" data-ui="src_insights"></p>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <p id="foot-disclaimer"></p>
+    <p id="foot-contact"></p>
+  </div>
+</footer>
+
+<script src="data/course.js?v=20261103"></script>
+<script src="data/participants.js?v=20261103"></script>
+<script src="data/insights.js?v=20261103"></script>
+<script src="data/resources.js?v=20261103"></script>
+<script src="assets/i18n.js?v=20261103"></script>
+<script src="assets/app.js?v=20261103"></script>
+<script src="assets/participants.js?v=20261103"></script>
+<script src="assets/insights.js?v=20261103"></script>
+<script src="assets/boot.js?v=20261103"></script>
+</body>
+</html>
