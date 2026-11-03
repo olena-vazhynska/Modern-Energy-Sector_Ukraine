@@ -204,6 +204,18 @@ window.APP = (function () {
         "<h3>" + esc(t(p.title)) + "</h3><p>" + esc(t(p.body)) + "</p></div>";
     }).join("");
 
+    /* downloadable material */
+    if (C.downloads) {
+      $("#downloads").innerHTML =
+        "<h2>" + esc(t(C.downloads.title)) + "</h2>" +
+        '<p class="muted" style="font-size:13.5px">' + esc(t(C.downloads.blurb)) + "</p>" +
+        '<div class="dl-row">' + C.downloads.items.map(function (d) {
+          return '<a class="dl" href="' + esc(d.href) + '" download><span class="dl-ext">' + esc(d.ext) +
+            "</span><span>" + esc(t(d.label)) + "</span></a>";
+        }).join("") + "</div>" +
+        '<p class="muted" style="font-size:12.5px;margin:12px 0 0">' + esc(t(C.downloads.note)) + "</p>";
+    }
+
     /* co-creation */
     $("#cocreation-title").textContent = t(C.cocreation.title);
     $("#cocreation-blurb").textContent = t(C.cocreation.blurb);
