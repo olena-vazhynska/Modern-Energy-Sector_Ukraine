@@ -213,8 +213,8 @@ window.COURSE = {
   downloads: {
     title: { en: "Closing webinar deck", uk: "Презентація підсумкової зустрічі" },
     blurb: {
-      en: "The deck for the online closing session of 4 November, in both languages. Each of the 23 slides carries full speaker notes, and slide 6 is an editable placeholder for the ILO strategic-foresight presentation.",
-      uk: "Презентація для онлайн-підсумкової зустрічі 4 листопада, обома мовами. Кожен із 23 слайдів має повні нотатки доповідача, а слайд 6 — редагований заповнювач для презентації МОП зі стратегічного передбачення."
+      en: "The deck for the online closing session of 4 November, in both languages and in the course's own visual identity. Each of the 25 slides carries full speaker notes. Slides 6 and 17 are editable placeholders for the two invited contributions — the ILO strategic-foresight presentation and the view from the project.",
+      uk: "Презентація для онлайн-підсумкової зустрічі 4 листопада, обома мовами та у візуальній айдентиці курсу. Кожен із 25 слайдів має повні нотатки доповідача. Слайди 6 і 17 — редаговані заповнювачі для двох запрошених виступів: презентації МОП зі стратегічного передбачення та погляду з боку проєкту."
     },
     items: [
       { label: { en: "English · PowerPoint", uk: "Англійська · PowerPoint" }, ext: "PPTX",
