@@ -29,8 +29,8 @@
 window.INSIGHTS = {
 
   lead: {
-    en: "Thirty needs, drawn from the wall of cards, the pre-course survey and the self-introductions, grouped into the four question clusters that steer the week. Open one to see which sessions of this programme answer it — and what to read next.",
-    uk: "Тридцять потреб, зібраних зі стіни карток, анкети перед курсом і самопредставлень та згрупованих у чотири питальні кластери, що скеровують тиждень. Відкрийте будь-яку, щоб побачити, які сесії програми на неї відповідають — і що читати далі."
+    en: "Thirty-one needs, drawn from the wall of cards, the pre-course survey, the self-introductions and the study visits, grouped into the four question clusters that steer the week. Open one to see which sessions of this programme answer it — and what to read next.",
+    uk: "Тридцять одна потреба, зібрана зі стіни карток, анкети перед курсом, самопредставлень і навчальних візитів та згрупована у чотири питальні кластери, що скеровують тиждень. Відкрийте будь-яку, щоб побачити, які сесії програми на неї відповідають — і що читати далі."
   },
 
   method: {
@@ -39,7 +39,8 @@ window.INSIGHTS = {
       { en: "Every participant named one challenge and one expectation in the opening round on Monday 26 October. The cards stayed on the wall for the whole week.", uk: "Кожен учасник назвав один виклик і одне очікування у вступному раунді в понеділок 26 жовтня. Картки залишалися на стіні весь тиждень." },
       { en: "The cards were read together with the 19 pre-course survey submissions and the 16 eCampus self-introductions, and grouped into the four question clusters that steer the week.", uk: "Картки прочитано разом із 19 відповідями на анкету перед курсом і 16 самопредставленнями на eCampus та згруповано у чотири питальні кластери, що скеровують тиждень." },
       { en: "Each need was then matched to the sessions and study visits that address it, and to the resources cited in those sessions.", uk: "Далі кожну потребу зіставлено із сесіями та навчальними візитами, що її розглядають, і з ресурсами, згаданими на цих сесіях." },
-      { en: "Finally, publicly available ILO, UN and EU resources were added where the course itself goes only part of the way.", uk: "Нарешті, додано загальнодоступні ресурси МОП, ООН та ЄС там, де сам курс охоплює питання лише частково." }
+      { en: "Finally, publicly available ILO, UN and EU resources were added where the course itself goes only part of the way.", uk: "Нарешті, додано загальнодоступні ресурси МОП, ООН та ЄС там, де сам курс охоплює питання лише частково." },
+      { en: "After the visits, one need was added from what the group saw rather than from what it wrote, together with the Italian legal instruments that produce those practices — so that a permit system or an emergency plan can be read as something reproducible, not as a local habit.", uk: "Після візитів додано одну потребу — з того, що група побачила, а не записала, — разом з італійськими правовими інструментами, які створюють ці практики, щоб систему нарядів-допусків чи план дій у надзвичайних ситуаціях можна було прочитати як відтворюване рішення, а не місцеву звичку." }
     ],
     caveat: {
       en: "Items are summaries of handwritten Ukrainian cards and of free-text survey answers. They are deliberately not attributed to individuals and should be read as the collective position of the group, not as quotations.",
@@ -92,7 +93,7 @@ window.INSIGHTS = {
           title: { en: "Emergency response protocols as such", uk: "Протоколи реагування на надзвичайні ситуації як такі" },
           body: { en: "Several cards simply named the thing that was missing: a protocol for responding to an emergency. The Tuesday lab takes three draft wartime OSH protocols apart and asks what in each of them is actually inspectable.", uk: "Кілька карток просто назвали те, чого бракує: протокол реагування на надзвичайну ситуацію. Лабораторія у вівторок розбирає три проєкти протоколів БЗР воєнного часу й запитує, що в кожному з них справді піддається перевірці." },
           sessions: ["d2:1", "d2:4", "d4:1"],
-          reading: ["ilo-osh-2001", "ilo-recording-code", "ilo-labour-inspection-guidelines", "eu-89-391"] }
+          reading: ["it-piano-emergenza", "it-dm-antincendio", "ilo-osh-2001", "ilo-recording-code", "ilo-labour-inspection-guidelines", "eu-89-391"] }
       ]
     },
 
@@ -115,7 +116,7 @@ window.INSIGHTS = {
           title: { en: "Harmonising Ukrainian OSH law with the EU acquis", uk: "Гармонізація українського законодавства з БЗР із acquis ЄС" },
           body: { en: "Named on several cards and in the survey: Ukrainian legislation is seen as incomplete and insufficiently aligned with the European framework, while national legal acts need to be brought up to current European requirements. This is now an accession question, not only a technical one.", uk: "Названо на кількох картках і в анкеті: українське законодавство сприймається як недосконале та недостатньо узгоджене з європейською рамкою, а національні нормативно-правові акти потребують приведення до чинних європейських вимог. Це вже питання вступу до ЄС, а не лише технічне." },
           sessions: ["d0:2", "d2:3", "d6:0", "d6:1"],
-          reading: ["eu-osha-directives", "eu-89-391", "eu-89-656", "eu-2009-104", "eu-92-104", "eu-2013-35", "eu-osh-framework-2021", "ilo-c155", "ilo-c187", "ua-law-osh"] },
+          reading: ["eu-osha-directives", "eu-89-391", "it-dlgs-81", "eu-89-656", "eu-2009-104", "eu-92-104", "eu-2013-35", "eu-osh-framework-2021", "ilo-c155", "ilo-c187", "ua-law-osh"] },
 
         { id: "g3", src: ["cards"], weight: 5,
           title: { en: "The moratorium on inspections, and what remains lawful", uk: "Мораторій на перевірки — і що залишається законним" },
@@ -133,7 +134,7 @@ window.INSIGHTS = {
           title: { en: "Financing prevention: OSH costs in the tariff", uk: "Фінансування профілактики: витрати на БЗР у тарифі" },
           body: { en: "Two separate cards made the same argument: expenditure on PPE and on running the OSH function should be recognised in the electricity tariff or in the cost of the product. Without that, prevention competes with every other line in the budget.", uk: "Дві окремі картки висловили той самий аргумент: витрати на ЗІЗ і на утримання служби БЗР мають бути враховані в тарифі на електроенергію або в собівартості продукції. Без цього профілактика конкурує з усіма іншими статтями бюджету." },
           sessions: ["d1:1", "d3:0", "d3:2"],
-          reading: ["ilo-osh-2001", "euosha-costs-benefits", "ilo-c187", "iea-energy-employment"] },
+          reading: ["ilo-osh-2001", "euosha-costs-benefits", "it-dlgs-231", "it-mog-231", "ilo-c187", "iea-energy-employment"] },
 
         { id: "g6", src: ["cards"], weight: 3,
           title: { en: "Speeding up regulatory decision-making", uk: "Пришвидшення ухвалення регуляторних рішень" },
@@ -186,7 +187,7 @@ window.INSIGHTS = {
           title: { en: "Changing the safety culture — risk assessment as a tool, not a form", uk: "Зміна культури безпеки — оцінювання ризиків як інструмент, а не формальність" },
           body: { en: "One of the most quoted lines of the week came from this group: risk assessment should be seen not as a formal requirement, but as an important tool for preventing injuries and incidents. The underlying ask is about leadership, worker involvement and a proactive rather than reactive safety culture.", uk: "Одна з найчастіше цитованих фраз тижня пролунала саме тут: оцінювання ризиків має сприйматися не як формальна вимога, а як важливий інструмент запобігання травмам та інцидентам. За цим стоїть запит на лідерство, залучення працівників і проактивну, а не реактивну культуру безпеки." },
           sessions: ["d1:1", "d1:3", "d3:0", "d3:2"],
-          reading: ["ilo-osh-2001", "euosha-safety-culture", "ilo-guide-inspectors", "ilo-c155", "iso-45001"] },
+          reading: ["ilo-osh-2001", "it-dvr", "euosha-safety-culture", "ilo-guide-inspectors", "ilo-c155", "iso-45001"] },
 
         { id: "p5", src: ["cards"], weight: 3,
           title: { en: "Minimising occupational injuries", uk: "Мінімізація виробничого травматизму" },
@@ -233,7 +234,7 @@ window.INSIGHTS = {
           title: { en: "Automating and digitalising risk assessment", uk: "Автоматизація та цифровізація оцінювання ризиків" },
           body: { en: "The single most repeated expectation on the wall: review the way risk assessment is done, and automate or digitalise it. Several cards went further and asked specifically for AI support in the assessment itself.", uk: "Найчастіше повторене очікування на стіні: переглянути спосіб оцінювання ризиків і автоматизувати або цифровізувати його. Кілька карток пішли далі й прямо просили про підтримку ШІ в самому оцінюванні." },
           sessions: ["d2:0", "d2:1", "d1:1", "d3:0"],
-          reading: ["euosha-ai-monitoring", "euosha-ai-worker-management", "ilo-osh-2001", "niosh-hierarchy", "iso-45001", "eu-ai-act"] },
+          reading: ["oira", "it-dvr", "it-cem", "euosha-ai-monitoring", "euosha-ai-worker-management", "ilo-osh-2001", "niosh-hierarchy", "iso-45001", "eu-ai-act"] },
 
         { id: "t3", src: ["cards"], weight: 4,
           title: { en: "Video capture of works, and AI for risk analysis", uk: "Відеофіксація робіт і ШІ для аналізу ризиків" },
@@ -257,19 +258,25 @@ window.INSIGHTS = {
           title: { en: "How European energy companies actually organise high-risk work", uk: "Як європейські енергокомпанії насправді організовують роботи підвищеної небезпеки" },
           body: { en: "The most frequent expectation of all, in both the cards and the survey: to see, on site, how European energy enterprises organise and carry out high-risk work using a risk-based approach — and which of it could be brought home. This is precisely what the three study visits and the common observation charter are for.", uk: "Найчастіше очікування загалом — і на картках, і в анкеті: побачити на місці, як європейські енергетичні підприємства організовують і виконують роботи підвищеної небезпеки із застосуванням ризик-орієнтованого підходу — і що з цього можна перенести додому. Саме для цього існують три навчальні візити та спільна хартія спостереження." },
           sessions: ["d2:4", "d3:0", "d3:2", "d4:0", "d4:2", "d5:0"],
-          reading: ["ilo-osh-2001", "iso-45001", "eu-89-391", "eu-92-104", "ilo-guide-inspectors", "euosha-safety-culture"] },
+          reading: ["it-dlgs-81", "it-mog-231", "it-permesso-lavoro", "ilo-osh-2001", "iso-45001", "eu-89-391", "eu-92-104", "ilo-guide-inspectors", "euosha-safety-culture"] },
 
         { id: "t7", src: ["cards", "forum"], weight: 4,
           title: { en: "Competence verification before access to the job", uk: "Перевірка компетентності перед допуском до роботи" },
           body: { en: "An expectation framed as a comparison: how is specialised training organised before a worker is admitted to the job — for example for electrical safety or for an electrician on live networks? What is actually verified, by whom, and how often?", uk: "Очікування, сформульоване як порівняння: як організовано спеціальне навчання перед допуском працівника до роботи — наприклад, з електробезпеки або для електромонтера на діючих мережах? Що саме перевіряють, хто і як часто?" },
           sessions: ["d3:0", "d4:0", "d5:0", "d3:2"],
-          reading: ["ilo-osh-2001", "eu-89-391", "eu-2013-35", "ppe-standards", "ilo-guide-inspectors"] },
+          reading: ["it-permesso-lavoro", "it-cem", "ilo-osh-2001", "eu-89-391", "eu-2013-35", "ppe-standards", "ilo-guide-inspectors"] },
 
         { id: "t8", src: ["cards", "survey"], weight: 5,
           title: { en: "Ready-made material to use on Monday morning", uk: "Готові напрацювання, які можна застосувати в понеділок зранку" },
           body: { en: "One survey answer set the bar precisely: an improvement plan, checklists and document templates that can be applied at work immediately after the training. The Tuesday lab and the three visit debriefs are designed to produce exactly that.", uk: "Одна з відповідей анкети встановила планку точно: план покращень, чек-листи й шаблони документів, які можна застосувати в роботі одразу після навчання. Лабораторія вівторка та три обговорення після візитів розраховані саме на це." },
           sessions: ["d2:4", "d3:2", "d4:2", "d6:1"],
-          reading: ["ilo-osh-2001", "ilo-guide-inspectors", "ilo-labour-inspection-guidelines", "iso-45001"] }
+          reading: ["ilo-osh-2001", "ilo-guide-inspectors", "ilo-labour-inspection-guidelines", "iso-45001"] },
+
+        { id: "t9", src: ["visit", "cards"], weight: 6,
+          title: { en: "Digital work permits, and the legal system underneath them", uk: "Цифрові наряди-допуски — і правова система, що за ними стоїть" },
+          body: { en: "The single most asked-about thing on the IREN visit. The permit is issued and closed on a screen rather than on paper: the job cannot start until the isolation is confirmed and the authorising person has signed, the controls travel with the permit, and closing it returns the equipment to service with a timestamped record of who did what. Several participants recognised it immediately as the answer to a problem they already have — proving, after the fact, that a maintenance job was properly authorised and properly handed back.\n\nThe part that is easy to miss is that the software is the last layer, not the first. Underneath it sits Article 26 of Legislative Decree 81/2008, which obliges the client to verify the contractor, inform it of the site's specific risks and draw up the interference risk assessment; above it sits the Modello 231, under which a failure of that system is a liability of the company itself. The tablet is what makes the duty auditable. Buying the tablet without the duty produces a faster way to record the same gaps.", uk: "Те, про що найбільше запитували під час візиту до IREN. Наряд-допуск оформлюють і закривають на екрані, а не на папері: робота не може початися, доки не підтверджено схему від’єднання і не підписав відповідальний, заходи контролю «подорожують» разом із нарядом, а його закриття повертає обладнання в роботу з позначкою часу про те, хто що зробив. Дехто з учасників одразу впізнав у цьому відповідь на проблему, яку вже має, — довести постфактум, що ремонтну роботу було належно дозволено і належно повернуто.\n\nЛегко не помітити, що програмне забезпечення тут — останній шар, а не перший. Під ним лежить стаття 26 Законодавчого декрету 81/2008, яка зобов’язує замовника перевірити підрядника, поінформувати його про специфічні ризики об’єкта і скласти оцінювання ризиків взаємного впливу; над ним — Modello 231, за яким збій цієї системи є відповідальністю самої компанії. Планшет робить обов’язок придатним для аудиту. Купівля планшета без обов’язку дає лише швидший спосіб фіксувати ті самі прогалини." },
+          sessions: ["d3:0", "d3:2", "d2:4", "d4:0"],
+          reading: ["it-permesso-lavoro", "it-dlgs-81", "it-mog-231", "it-dlgs-231", "euosha-maintenance", "euosha-digitalisation", "iso-45001", "eu-89-391"] }
       ]
     }
   ],

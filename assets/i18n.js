@@ -89,6 +89,7 @@ window.UI = {
   srcCards:    { en: "Wall of cards", uk: "Стіна карток" },
   srcSurvey:   { en: "Pre-course survey", uk: "Анкета перед курсом" },
   srcForum:    { en: "Self-introductions", uk: "Самопредставлення" },
+  srcVisit:    { en: "Study visit", uk: "Навчальний візит" },
   citedInCourse:{ en: "Cited in the course", uk: "Згадано в курсі" },
   addedReading:{ en: "Added reading", uk: "Додане читання" },
   allCats:     { en: "All categories", uk: "Усі категорії" },
@@ -98,7 +99,7 @@ window.UI = {
   resCount:    { en: "{n} of {t} resources", uk: "Ресурсів: {n} із {t}" },
   noRes:       { en: "No resource matches that search.", uk: "Жоден ресурс не відповідає цьому пошуку." },
   linkedNeeds: { en: "Linked needs", uk: "Пов’язані потреби" },
-  src_insights:{ en: "Sources: the wall of challenge and expectation cards collected in the opening round on 26 October 2026; the pre-course survey (19 submissions); the eCampus self-introductions; and the course session decks. Card items are faithful summaries of handwritten Ukrainian originals, not verbatim quotations, and are not attributed to individuals. All external links were checked on 3 November 2026.", uk: "Джерела: стіна карток із викликами та очікуваннями, зібрана у вступному раунді 26 жовтня 2026; анкета перед курсом (19 відповідей); самопредставлення на eCampus; презентації сесій курсу. Пункти з карток є точними узагальненнями рукописних українських оригіналів, а не дослівними цитатами, і не прив’язані до окремих осіб. Усі зовнішні посилання перевірено 3 листопада 2026." },
+  src_insights:{ en: "Sources: the wall of challenge and expectation cards collected in the opening round on 26 October 2026; the pre-course survey (19 submissions); the eCampus self-introductions; and the course session decks. Card items are faithful summaries of handwritten Ukrainian originals, not verbatim quotations, and are not attributed to individuals. All external links were checked on 4 November 2026.", uk: "Джерела: стіна карток із викликами та очікуваннями, зібрана у вступному раунді 26 жовтня 2026; анкета перед курсом (19 відповідей); самопредставлення на eCampus; презентації сесій курсу. Пункти з карток є точними узагальненнями рукописних українських оригіналів, а не дослівними цитатами, і не прив’язані до окремих осіб. Усі зовнішні посилання перевірено 4 листопада 2026." },
 
   /* --- categories (library) ---------------------------------------------- */
   cat: {
@@ -113,6 +114,7 @@ window.UI = {
     inclusion:   { en: "Inclusion and gender", uk: "Інклюзія та гендер" },
     energy:      { en: "Energy sector", uk: "Енергетичний сектор" },
     ukraine:     { en: "Ukraine", uk: "Україна" },
+    italy:       { en: "Italy — host-country practice", uk: "Італія — практика країни перебування" },
     eu:          { en: "European Union", uk: "Європейський Союз" },
     evidence:    { en: "Evidence and data", uk: "Докази та дані" },
     context:     { en: "Context", uk: "Контекст" }
@@ -126,6 +128,7 @@ window.UI = {
     directive:        { en: "EU directive", uk: "Директива ЄС" },
     regulation:       { en: "EU regulation", uk: "Регламент ЄС" },
     "national-law":   { en: "Ukrainian law", uk: "Законодавство України" },
+    "italy-law":      { en: "Italian law", uk: "Законодавство Італії" },
     report:           { en: "Report", uk: "Звіт" },
     news:             { en: "News", uk: "Новина" },
     data:             { en: "Data", uk: "Дані" },

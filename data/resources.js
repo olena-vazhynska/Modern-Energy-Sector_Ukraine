@@ -11,7 +11,7 @@
    `cats` drive the filters in the library. `id` is what data/insights.js
    references from each need and each foresight driver.
 
-   All links were checked on 3 November 2026. A few publishers (NORMLEX, IRENA,
+   All links were checked on 4 November 2026. A few publishers (NORMLEX, IRENA,
    CDC/NIOSH, ISO) block automated checks, so those were verified against the
    course decks they were taken from.
    ========================================================================== */
@@ -69,10 +69,10 @@ window.RESOURCES = [
     url: "https://www.ilo.org/publications/guidelines-occupational-safety-and-health-management-systems-ilo-osh-2001" },
 
   { id: "iso-45001", course: false, type: "standard", year: 2018,
-    pub: "ISO", cats: ["guidance", "governance"],
-    title: { en: "ISO 45001 — Occupational health and safety management systems", uk: "ISO 45001 — Системи управління охороною здоров’я та безпекою праці" },
-    note: { en: "The certifiable counterpart to ILO-OSH 2001. Several participants' enterprises are already working towards or within an ISO-based integrated system.", uk: "Сертифікований аналог ILO-OSH 2001. Низка підприємств учасників уже рухається до інтегрованої системи на основі ISO або працює в ній." },
-    url: "https://www.iso.org/standard/63787.html" },
+    pub: "ISO / UNI", cats: ["guidance", "governance", "italy"],
+    title: { en: "ISO 45001:2018 — Occupational health and safety management systems (adopted in Italy as UNI ISO 45001:2018)", uk: "ISO 45001:2018 — Системи управління охороною здоров’я та безпекою праці (в Італії запроваджено як UNI ISO 45001:2018)" },
+    note: { en: "The certifiable counterpart to ILO-OSH 2001, and the system standard behind the Italian sites the group visited. Its engine is the Plan–Do–Check–Act cycle: the standard does not ask an organisation to be safe once, it asks for evidence that the organisation keeps finding and closing its own gaps. That is the continuous-improvement duty in Clause 10, and it is what an auditor — or an inspector — actually looks for. Several participants' enterprises are already working towards or within an ISO-based integrated system.", uk: "Сертифікований аналог ILO-OSH 2001 і системний стандарт, що стоїть за італійськими об’єктами, які відвідала група. Його двигун — цикл «Плануй–Виконуй–Перевіряй–Дій»: стандарт вимагає не одноразової безпеки, а доказів того, що організація постійно знаходить і закриває власні прогалини. Це обов’язок безперервного вдосконалення в розділі 10 — і саме це насправді шукає аудитор або інспектор. Низка підприємств учасників уже рухається до інтегрованої системи на основі ISO або працює в ній." },
+    url: "https://store.uni.com/uni-iso-45001-2018" },
 
   { id: "niosh-hierarchy", course: true, type: "web-resource", year: 2023,
     pub: "NIOSH / CDC", cats: ["guidance", "technology"],
@@ -376,6 +376,84 @@ window.RESOURCES = [
     title: { en: "The costs and benefits of occupational safety and health", uk: "Витрати та вигоди безпеки й гігієни праці" },
     note: { en: "The evidence base for arguing that prevention spending belongs in the tariff rather than in the residual budget.", uk: "Доказова база для аргументу, що витрати на профілактику належать до тарифу, а не до залишкового бюджету." },
     url: "https://osha.europa.eu/en/themes/good-osh-is-good-for-business" },
+
+  /* ===========================================================================
+     ITALY — the legal architecture behind what the group saw on the visits
+     ---------------------------------------------------------------------------
+     Added after the study visits. Participants asked repeatedly how European
+     energy companies actually organise high-risk work; the honest answer is
+     that what they saw at IREN, Sogin and Imerys is the visible surface of a
+     specific legal stack. These entries are that stack, bottom to top, so the
+     practice can be read as something reproducible rather than as a local
+     habit. Article-level links go to Normattiva, the official consolidated
+     text maintained by the Istituto Poligrafico e Zecca dello Stato.
+     ======================================================================== */
+
+  { id: "it-dlgs-81", course: false, type: "italy-law", year: 2008,
+    pub: "Repubblica Italiana", cats: ["italy", "governance", "guidance"],
+    title: { en: "Legislative Decree 81/2008 — the Italian consolidated act on occupational safety and health (Testo Unico)", uk: "Законодавчий декрет 81/2008 — зведений акт Італії про безпеку та здоров’я на роботі (Testo Unico)" },
+    note: { en: "The single statute behind every Italian site the group visited. It transposes the EU Framework Directive 89/391/EEC and its daughter directives into one consolidated text: employer duties that cannot be delegated, the risk assessment document, the prevention and protection service, the workers' safety representative, emergency planning, contractor coordination, and a title for each family of hazard. Where Ukraine has a framework law plus a large body of separate rules, Italy has one act — which is part of why the sites could show a single coherent system.", uk: "Єдиний закон, що стоїть за кожним італійським об’єктом, який відвідала група. Він імплементує Рамкову директиву ЄС 89/391/ЄЕС та похідні від неї в один зведений текст: обов’язки роботодавця, які не можна делегувати, документ оцінювання ризиків, службу запобігання і захисту, уповноваженого працівників з безпеки, планування дій у надзвичайних ситуаціях, координацію підрядників і окремий розділ для кожної групи небезпек. Там, де Україна має рамковий закон і великий масив окремих актів, Італія має один акт — частково тому об’єкти і змогли показати єдину узгоджену систему." },
+    url: "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2008-04-09;81" },
+
+  { id: "it-dvr", course: false, type: "italy-law", year: 2008,
+    pub: "Repubblica Italiana", cats: ["italy", "guidance", "governance"],
+    title: { en: "The risk assessment document (DVR) — Article 28, Legislative Decree 81/2008", uk: "Документ оцінювання ризиків (DVR) — стаття 28 Законодавчого декрету 81/2008" },
+    note: { en: "The obligation that anchors the whole Italian system. The assessment must cover all risks, including work-related stress, risks to pregnant workers, and those connected with gender, age, country of origin and the specific type of contract. The document must carry a certain date, the criteria used, the measures chosen, the prevention programme and the names of those who took part — which makes it inspectable rather than declaratory. Read it next to the Ukrainian risk-assessment duty: the difference is less in what must be assessed than in what must be written down and provable.", uk: "Обов’язок, на якому тримається вся італійська система. Оцінювання має охоплювати всі ризики, зокрема пов’язаний із роботою стрес, ризики для вагітних працівниць, а також ризики, пов’язані зі статтю, віком, країною походження і конкретним типом договору. Документ повинен мати достовірну дату, застосовані критерії, обрані заходи, програму профілактики та імена учасників процесу — що робить його придатним для перевірки, а не декларативним. Читайте поряд з українським обов’язком оцінювання ризиків: різниця не стільки в тому, що оцінювати, скільки в тому, що має бути записано і доведено." },
+    url: "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2008-04-09;81~art28" },
+
+  { id: "it-cem", course: false, type: "web-resource", year: 2026,
+    pub: "INAIL · Portale Agenti Fisici", cats: ["italy", "guidance", "energy"],
+    title: { en: "Assessing the electromagnetic field risk — Portale Agenti Fisici", uk: "Оцінювання ризику електромагнітних полів — Portale Agenti Fisici" },
+    note: { en: "A worked example of a specific risk assessment sitting under the general DVR duty, and the one most directly relevant to a grid operator. Title VIII, Chapter IV of Legislative Decree 81/2008 transposes EU Directive 2013/35/EU and sets exposure limit values and action levels; this national portal, run by INAIL with the regions, supplies the calculation tools, the database of measured sources and the guidance to do the assessment. Useful as a model for how a specific-risk assessment can be standardised nationally instead of improvised enterprise by enterprise.", uk: "Опрацьований приклад оцінювання конкретного ризику в межах загального обов’язку DVR — і найбільш релевантний для оператора мережі. Розділ VIII, глава IV Законодавчого декрету 81/2008 імплементує Директиву ЄС 2013/35/ЄС і встановлює граничні значення впливу та рівні дії; цей національний портал, який веде INAIL разом з регіонами, надає інструменти розрахунку, базу виміряних джерел і настанови для проведення оцінювання. Корисний як модель того, як оцінювання конкретного ризику можна стандартизувати на національному рівні, а не імпровізувати на кожному підприємстві." },
+    url: "https://www.portaleagentifisici.it/fo_campi_elettromagnetici_valutazione.php" },
+
+  { id: "it-permesso-lavoro", course: false, type: "italy-law", year: 2008,
+    pub: "Repubblica Italiana", cats: ["italy", "governance", "technology"],
+    title: { en: "Contractor coordination and the permit to work — Article 26, Legislative Decree 81/2008", uk: "Координація підрядників і наряд-допуск — стаття 26 Законодавчого декрету 81/2008" },
+    note: { en: "The legal root of the permit systems the group saw in use. Article 26 requires the client to verify the contractor's technical and professional suitability, to inform it of the specific risks of the site, to cooperate and coordinate on prevention, and to draw up the DUVRI — the interference risk assessment — for work carried out by outside firms. The permit to work is the operational instrument that discharges this duty for a single job: it names the work, the isolation, the controls, the authorising person and the time window. Where it has been digitalised, it also produces the audit trail that proves the coordination happened.", uk: "Правовий корінь систем нарядів-допусків, які група бачила в дії. Стаття 26 вимагає від замовника перевірити технічну та професійну придатність підрядника, поінформувати його про специфічні ризики об’єкта, співпрацювати й координувати профілактичні заходи та скласти DUVRI — оцінювання ризиків взаємного впливу — для робіт, що виконують сторонні фірми. Наряд-допуск є операційним інструментом, який виконує цей обов’язок для окремої роботи: він називає роботу, схему від’єднання, заходи контролю, особу, що дозволяє, і часове вікно. Там, де його оцифровано, він також створює аудиторський слід, який доводить, що координація дійсно відбулася." },
+    url: "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2008-04-09;81~art26" },
+
+  { id: "it-piano-emergenza", course: false, type: "italy-law", year: 2008,
+    pub: "Repubblica Italiana", cats: ["italy", "energy", "guidance"],
+    title: { en: "Emergency planning — Articles 43–46, Legislative Decree 81/2008", uk: "Планування дій у надзвичайних ситуаціях — статті 43–46 Законодавчого декрету 81/2008" },
+    note: { en: "What an emergency plan for a power plant has to contain, and who has to be able to execute it. The employer must organise the necessary relations with the external emergency services, designate and train the workers responsible for first aid, firefighting and evacuation, and ensure that every worker exposed to serious and immediate danger can take action to avoid the consequences. The detailed fire-safety management rules sit in the Ministerial Decree of 2 September 2021. Read together, these are the instruments that produce the kind of plan the group saw on the visits — including the assembly points, the roles and the drill records.", uk: "Що має містити план дій у надзвичайних ситуаціях для електростанції та хто має бути здатним його виконати. Роботодавець зобов’язаний організувати необхідну взаємодію із зовнішніми аварійними службами, призначити і навчити працівників, відповідальних за першу допомогу, пожежогасіння та евакуацію, і забезпечити, щоб кожен працівник, який зазнає серйозної та безпосередньої небезпеки, міг діяти для уникнення наслідків. Деталізовані правила управління пожежною безпекою містить Міністерський декрет від 2 вересня 2021 року. Разом це інструменти, що створюють той тип плану, який група бачила під час візитів, — зокрема пункти збору, ролі та записи про навчальні тривоги." },
+    url: "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2008-04-09;81~art43" },
+
+  { id: "it-dm-antincendio", course: false, type: "italy-law", year: 2021,
+    pub: "Ministero dell'Interno", cats: ["italy", "guidance"],
+    title: { en: "Ministerial Decree of 2 September 2021 — fire safety management in the workplace", uk: "Міністерський декрет від 2 вересня 2021 року — управління пожежною безпекою на робочому місці" },
+    note: { en: "The current rule on fire-risk management, emergency plans, drills and the training and qualification of the fire teams, replacing the 1998 decree. This is the operational detail behind the emergency plan of any Italian industrial site, including the frequency of exercises and what has to be recorded about them.", uk: "Чинний акт про управління пожежним ризиком, плани дій у надзвичайних ситуаціях, навчальні тривоги, а також навчання і кваліфікацію пожежних команд; замінив декрет 1998 року. Це операційна деталізація, що стоїть за планом дій будь-якого італійського промислового об’єкта, зокрема періодичність тренувань і те, що про них має бути задокументовано." },
+    url: "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.ministeriale:2021-09-02" },
+
+  { id: "it-dlgs-231", course: false, type: "italy-law", year: 2001,
+    pub: "Repubblica Italiana", cats: ["italy", "governance"],
+    title: { en: "Legislative Decree 231/2001 — administrative liability of organisations", uk: "Законодавчий декрет 231/2001 — адміністративна відповідальність організацій" },
+    note: { en: "The reason Italian companies invest in safety management rather than merely complying with it. The decree makes the organisation itself liable — with fines, and with bans on contracting with the public administration — for certain offences committed in its interest by its own people. Since 2007 that list includes manslaughter and serious injury caused by breach of occupational safety rules. For an energy utility, a fatal accident is therefore not only a prosecution of a manager; it is a corporate exposure that reaches procurement and financing.", uk: "Причина, чому італійські компанії інвестують в управління безпекою, а не просто дотримуються вимог. Декрет робить відповідальною саму організацію — через штрафи та заборону укладати договори з державними органами — за певні правопорушення, вчинені в її інтересах її ж людьми. З 2007 року цей перелік охоплює необережне спричинення смерті та тяжких тілесних ушкоджень унаслідок порушення правил охорони праці. Для енергетичної компанії смертельний нещасний випадок — це вже не лише переслідування керівника, а корпоративний ризик, що сягає закупівель і фінансування." },
+    url: "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2001-06-08;231" },
+
+  { id: "it-mog-231", course: false, type: "italy-law", year: 2008,
+    pub: "Repubblica Italiana", cats: ["italy", "governance", "guidance"],
+    title: { en: "The organisation and management model (“Modello 231”) — Article 30, Legislative Decree 81/2008", uk: "Модель організації та управління («Modello 231») — стаття 30 Законодавчого декрету 81/2008" },
+    note: { en: "The bridge between the two decrees, and the single most transferable idea in this set. Article 30 says that an organisation and management model has effect in exonerating the company from liability under Decree 231/2001 only if it ensures a system that discharges the specific legal duties — hazard identification, emergency management, worker consultation, training, supervision, documentation and periodic verification — and only if it includes a disciplinary system and a mechanism for its own review. It also deems models conforming to ILO-OSH 2001 or to the BS OHSAS 18001 lineage, now ISO 45001, to be compliant. In other words: the management system is not paperwork sitting beside the law, it is the condition on which corporate liability turns.", uk: "Міст між двома декретами і найбільш придатна для перенесення ідея в цьому наборі. Стаття 30 встановлює, що модель організації та управління звільняє компанію від відповідальності за Декретом 231/2001 лише тоді, коли вона забезпечує систему, яка виконує конкретні правові обов’язки — виявлення небезпек, управління надзвичайними ситуаціями, консультації з працівниками, навчання, нагляд, документування та періодичну перевірку — і лише якщо вона містить дисциплінарну систему та механізм власного перегляду. Вона також визнає моделі, що відповідають ILO-OSH 2001 або лінії BS OHSAS 18001, нині ISO 45001, такими, що відповідають вимогам. Інакше кажучи: система управління — це не папери поруч із законом, а умова, від якої залежить корпоративна відповідальність." },
+    url: "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2008-04-09;81~art30" },
+
+  { id: "euosha-maintenance", course: false, type: "report", year: 2010,
+    pub: "EU-OSHA", cats: ["guidance", "evidence", "energy"],
+    title: { en: "Maintenance and occupational safety and health: a statistical picture", uk: "Технічне обслуговування та безпека праці: статистична картина" },
+    note: { en: "Why maintenance deserves its own protocol rather than being treated as ordinary work. Maintenance workers are exposed to a wider range of hazards than almost any other group, they work on equipment that is partly dismantled or temporarily out of its safe state, and they are frequently contractors unfamiliar with the site. The evidence here is the argument for the permit, the isolation, the pre-job briefing and the formal handback that the group saw in use at IREN.", uk: "Чому технічне обслуговування заслуговує на окремий протокол, а не на поводження як зі звичайною роботою. Ремонтний персонал зазнає ширшого спектра небезпек, ніж майже будь-яка інша група, працює з обладнанням, що частково розібране або тимчасово виведене зі свого безпечного стану, і часто є підрядниками, незнайомими з об’єктом. Наведені дані є аргументом на користь наряду-допуску, схеми від’єднання, цільового інструктажу та формального повернення обладнання, які група бачила в дії в IREN." },
+    url: "https://osha.europa.eu/en/publications/maintenance-and-occupational-safety-and-health-statistical-picture" },
+
+  { id: "euosha-digitalisation", course: false, type: "web-resource", year: 2026,
+    pub: "EU-OSHA", cats: ["technology", "guidance", "eu"],
+    title: { en: "Digitalisation of work — EU-OSHA", uk: "Цифровізація праці — EU-OSHA" },
+    note: { en: "The governance side of a digital permit, a digital checklist or a tablet-based inspection round: what the tool changes about who decides, what is recorded, how long it is kept and who can see it. Worth reading before procuring any of the systems the group admired on the visits.", uk: "Бік врядування цифрового наряду-допуску, цифрового чек-листа чи обходу з планшетом: що інструмент змінює в тому, хто ухвалює рішення, що фіксується, скільки зберігається і хто має доступ. Варто прочитати перед закупівлею будь-якої з систем, які група оцінила під час візитів." },
+    url: "https://osha.europa.eu/en/themes/digitalisation-work" },
+
+  { id: "oira", course: false, type: "web-resource", year: 2026,
+    pub: "EU-OSHA", cats: ["guidance", "technology", "eu"],
+    title: { en: "OiRA — Online interactive Risk Assessment", uk: "OiRA — онлайн-інструмент інтерактивного оцінювання ризиків" },
+    note: { en: "A free EU-OSHA platform of sector-specific risk assessment tools, several of them in national versions. Relevant here as a demonstration that a risk assessment can be delivered as a structured digital instrument that produces a dated, exportable document and an action plan — the direction several cards asked for when they called for the automation and digitalisation of risk assessment.", uk: "Безкоштовна платформа EU-OSHA з галузевими інструментами оцінювання ризиків, частина з яких має національні версії. Релевантна як демонстрація того, що оцінювання ризиків може бути структурованим цифровим інструментом, який створює датований документ для експорту та план заходів, — саме той напрям, про який просили кілька карток, коли йшлося про автоматизацію та цифровізацію оцінювання ризиків." },
+    url: "https://oiraproject.eu/en" },
 
   /* --------------------------------------------------------- PPE standards */
   { id: "ppe-standards", course: true, type: "standard", year: 2026,

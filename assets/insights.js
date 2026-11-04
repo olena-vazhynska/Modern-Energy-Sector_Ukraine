@@ -19,7 +19,7 @@ window.INS = (function () {
   var RES = {};
   (window.RESOURCES || []).forEach(function (r) { RES[r.id] = r; });
 
-  var SRC_LABEL = { cards: "srcCards", survey: "srcSurvey", forum: "srcForum" };
+  var SRC_LABEL = { cards: "srcCards", survey: "srcSurvey", forum: "srcForum", visit: "srcVisit" };
 
   function needMatches(n) {
     var q = state.q.trim().toLowerCase();
