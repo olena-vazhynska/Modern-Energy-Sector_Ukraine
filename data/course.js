@@ -209,29 +209,6 @@ window.COURSE = {
       body: { en: "Strategic foresight for OSH to 2050, debrief of the residential phase, action planning and next steps.", uk: "Стратегічне бачення розвитку БЗР до 2050 року, обговорення результатів очного етапу, планування дій і наступних кроків." } }
   ],
 
-  // Downloadable material. Paths are relative to the site root.
-  downloads: {
-    title: { en: "Closing webinar deck", uk: "Презентація підсумкової зустрічі" },
-    blurb: {
-      en: "The deck for the online closing session of 4 November, in both languages and in the course's own visual identity. Each of the 25 slides carries full speaker notes. Slides 6 and 17 are editable placeholders for the two invited contributions — the ILO strategic-foresight presentation and the view from the project.",
-      uk: "Презентація для онлайн-підсумкової зустрічі 4 листопада, обома мовами та у візуальній айдентиці курсу. Кожен із 25 слайдів має повні нотатки доповідача. Слайди 6 і 17 — редаговані заповнювачі для двох запрошених виступів: презентації МОП зі стратегічного передбачення та погляду з боку проєкту."
-    },
-    items: [
-      { label: { en: "English · PowerPoint", uk: "Англійська · PowerPoint" }, ext: "PPTX",
-        href: "assets/decks/A4019972_Closing_Webinar_4Nov2026_EN.pptx" },
-      { label: { en: "English · PDF", uk: "Англійська · PDF" }, ext: "PDF",
-        href: "assets/decks/A4019972_Closing_Webinar_4Nov2026_EN.pdf" },
-      { label: { en: "Ukrainian · PowerPoint", uk: "Українська · PowerPoint" }, ext: "PPTX",
-        href: "assets/decks/A4019972_Closing_Webinar_4Nov2026_UA.pptx" },
-      { label: { en: "Ukrainian · PDF", uk: "Українська · PDF" }, ext: "PDF",
-        href: "assets/decks/A4019972_Closing_Webinar_4Nov2026_UA.pdf" }
-    ],
-    note: {
-      en: "Speaker notes are visible in PowerPoint under View → Notes Page, and in the presenter view during the webinar. The PDF does not carry them.",
-      uk: "Нотатки доповідача видно в PowerPoint через «Вигляд → Сторінка нотаток» та в режимі доповідача під час вебінару. У PDF вони не зберігаються."
-    }
-  },
-
   // How the co-creation works in practice — opening deck slides 15, 26–28.
   cocreation: {
     title: { en: "How the week is co-created", uk: "Як тиждень створюється спільно" },
